@@ -7,14 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&lt;a href=&#34;https://creativecommons.org/licenses/by-nc/4.0/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CC BY-NC 4.0&lt;/a&gt;</copyright>
-    <lastBuildDate>Tue, 22 Mar 2022 18:21:01 -0500</lastBuildDate><atom:link href="https://emilyy.games/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 13 Apr 2022 17:53:36 -0500</lastBuildDate><atom:link href="https://emilyy.games/tags/untagged/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
       <link>https://emilyy.games/posts/my-first-post/</link>
-      <pubDate>Tue, 22 Mar 2022 18:21:01 -0500</pubDate>
+      <pubDate>Wed, 13 Apr 2022 17:53:36 -0500</pubDate>
       
       <guid>https://emilyy.games/posts/my-first-post/</guid>
-      <description>Hello World!</description>
+      <description>Hello world!
+First post!</description>
     </item>
     
   </channel>
