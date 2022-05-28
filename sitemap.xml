@@ -2,25 +2,12 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://emilyy.games/</loc>
-    <lastmod>2022-04-13T17:53:36-05:00</lastmod>
+    <loc>http://example.org/categories/</loc>
   </url><url>
-    <loc>https://emilyy.games/posts/my-first-post/</loc>
-    <lastmod>2022-04-13T17:53:36-05:00</lastmod>
+    <loc>http://example.org/</loc>
   </url><url>
-    <loc>https://emilyy.games/posts/</loc>
-    <lastmod>2022-04-13T17:53:36-05:00</lastmod>
+    <loc>http://example.org/projects/</loc>
   </url><url>
-    <loc>https://emilyy.games/tags/</loc>
-    <lastmod>2022-04-13T17:53:36-05:00</lastmod>
-  </url><url>
-    <loc>https://emilyy.games/tags/untagged/</loc>
-    <lastmod>2022-04-13T17:53:36-05:00</lastmod>
-  </url><url>
-    <loc>https://emilyy.games/blog/</loc>
-  </url><url>
-    <loc>https://emilyy.games/games/</loc>
-  </url><url>
-    <loc>https://emilyy.games/series/</loc>
+    <loc>http://example.org/tags/</loc>
   </url>
 </urlset>
