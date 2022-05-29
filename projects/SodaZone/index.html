@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Soda Zone Demo</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <style>
+        @font-face {
+            font-family: Fibberish;
+            src: url(fibberish.ttf);
+        }
+
+        body {
+            font-family: Fibberish;
+            color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+
+        canvas {
+            border: 2px solid;
+            padding: 0;
+            margin: auto;
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .logo {
+            margin: auto;
+            display: block;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 220px;
+            height: 125px;
+        }
+
+        .instructions {
+            padding-top: 100vh;
+        }
+    </style>
+
+    <body style="background-color: #fcfcfc;">
+        <img class="logo" src="sodazonelogo.png" style="margin-left:auto; margin-right:auto;"/>
+        <br/>
+        <canvas id="canvas" width="512px" height="480px" style="width: 512px;height: 480px;margin-left:auto; margin-right:auto"></canvas>
+        <script src="index.js"></script>
+        <script>
+            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":275520,"index.wasm":17503191},"focusCanvas":true,"gdnativeLibs":[]});
+            engine.startGame();
+        </script>
+
+        <center id="instructions">
+            <h1>About</h1>
+            You are froggy! On a quest to defeat the soda lords (or some shit).
+            <h1>Controls</h1>
+            A/D   - Left/Right <br/>
+            Space - Charge Jump <br/>
+            F     - Attack
+            <h1>Credits</h1>
+            Wonderful asset artists from itch.io
+            SciGho
+            nathan scott
+            Balloon Cart
+            LukasLundin
+        </center>
+    </body>
+</html>
