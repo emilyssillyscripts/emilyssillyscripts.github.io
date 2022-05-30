@@ -13,6 +13,7 @@
         }
 
         body {
+            align-content: center;
             background-image: url("bg.png");
             background-repeat: repeat;
             font-family: Fibberish;
@@ -20,7 +21,7 @@
         }
 
         canvas {
-            border: 2px solid black;
+            border: 4px solid #fcfcfc;
             padding: 0;
             margin: auto;
             display: block;
@@ -45,6 +46,12 @@
         .instructions {
             padding-top: 100vh;
         }
+
+        .card {
+            min-width: 600px;
+            background-color: yellow;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
     </style>
 
     <body style="background-color: #fcfcfc;">
@@ -53,13 +60,15 @@
         <canvas id="canvas" width="512px" height="480px" style="width: 512px;height: 480px;margin-left:auto; margin-right:auto"></canvas>
         <script src="index.js"></script>
         <script>
-            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":311072,"index.wasm":17503191},"focusCanvas":true,"gdnativeLibs":[]});
+            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":478208,"index.wasm":17503191},"focusCanvas":false,"gdnativeLibs":[]});
             engine.startGame();
         </script>
 
         <center id="instructions">
-            <h1>About</h1>
-            You are froggy! On a quest to defeat the soda lords (or some shit).
+            <div id="card">
+                <h1>About</h1>
+                You are froggy! On a quest to defeat the soda lords (or some shit).
+            </div>
             <h1>Controls</h1>
             A/D   - Left/Right <br/>
             Space - Charge Jump <br/>
