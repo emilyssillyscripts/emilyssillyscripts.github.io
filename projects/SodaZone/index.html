@@ -14,6 +14,7 @@
 
         body {
             align-content: center;
+            background-color: aquamarine;
             background-image: url("bg.png");
             background-repeat: repeat;
             font-family: Fibberish;
@@ -30,6 +31,8 @@
             bottom: 0;
             left: 0;
             right: 0;
+            width: 512px;
+            height: 480px;
         }
 
         .logo {
@@ -43,44 +46,48 @@
             height: 125px;
         }
 
-        .instructions {
-            padding-top: 100vh;
-        }
-
         .card {
-            min-width: 600px;
-            background-color: yellow;
+            max-width: 550px;
+            min-height: 100px;
+            border-radius: 3px;
             box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            background-color: #fcfcfc;
         }
     </style>
 
-    <body style="background-color: #fcfcfc;">
+    <body>
         <img class="logo" src="sodazonelogo.png" style="margin-left:auto; margin-right:auto;"/>
         <br/>
-        <canvas id="canvas" width="512px" height="480px" style="width: 512px;height: 480px;margin-left:auto; margin-right:auto"></canvas>
+        <canvas id="canvas" width="512px" height="480px"></canvas>
         <script src="index.js"></script>
         <script>
-            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":41418544,"index.wasm":17503191},"focusCanvas":false,"gdnativeLibs":[]});
+            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":41418672,"index.wasm":17503191},"focusCanvas":false,"gdnativeLibs":[]});
             engine.startGame();
         </script>
 
-        <center id="instructions">
-            <div id="card">
+        <center>
+            <div class="card">
                 <h1>About</h1>
                 You are froggy! On a quest to defeat the soda lords (or some shit).
             </div>
-            <h1>Controls</h1>
-            A/D   - Left/Right <br/>
-            Space - Charge Jump <br/>
-            F     - Attack
-            <h1>Credits</h1>
-            <h3>Wonderful asset artists from itch.io</h3>
-            <ul>
-                <li>SciGho</li>
-                <li>nathan scott</li>
-                <li>Balloon Cart</li>
-                <li>LukasLundin</li>
-            </ul>
+            
+            <div class="card">
+                <h1>Controls</h1>
+                A/D   - Left/Right <br/>
+                Space - Charge Jump <br/>
+                F     - Attack
+            </div>
+            
+            <div class="card">
+                <h1>Credits</h1>
+                <h3>Wonderful asset artists from itch.io</h3>
+                <ul>
+                    <li>SciGho</li>
+                    <li>nathan scott</li>
+                    <li>Balloon Cart</li>
+                    <li>LukasLundin</li>
+                </ul>
+            </div>
         </center>
     </body>
 </html>
