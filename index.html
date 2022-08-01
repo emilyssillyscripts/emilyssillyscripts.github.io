@@ -1,66 +1,81 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
   <head>
+    <!--
+    Name: Emily Prewitt
+    Date: July 31, 2022
+    Assignment: Online Profile Final Project
+    filename: index.html
+    -->
     <meta charset="utf-8">
-    <title>Home - Emily's Games</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home - emilyy.games</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
-      <div class="navbackground">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-        <img src="logo.png">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #111d4a;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">emilyy.games</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html"><i class="fa-solid fa-circle-info"></i> About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"><i class="fa-solid fa-computer"></i> Projects</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
-    <div class="maincontent">
-      <div class="maintext">
-        <h1>Unique Projects</h1>
-        <p>I do a wide range of software projects. I am a sophmore in college for my degree in Computer Science.</p>
-        <br>
-        <p>Take a look at some of my recent projects below!</p>
-      </div>
-      <div class="mainimage">
-        <img src="dog.jpg">
-      </div>
+    <div class="container content welcome">
+      <h1 class="display-3">Welcome</h1>
+      <p>Thank you for visiting my site! Take a look around to get to know more about me.</p>
     </div>
 
-    <div class="cardheader">
-      <h1>Recent Projects</h1>
+    <div class="container content">
+      <h1 class="display-3">Projects</h1>
+      <p>Below you can see a couple brief examples of my recent game development projects.</p>
+
+      <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/sodazonedemo.gif" class="d-block w-100" alt="...">
+            <div class="carousel-caption align-items-center justify-content-center">
+              <h5>Soda Zone</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/thecovedemo.gif" class="d-block w-100" alt="...">
+            <div class="carousel-caption">
+              <h5>The Cove</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <a href="projects.html" class="btn btn-primary">More Information</a>
     </div>
 
-    <div class="projectcontainer">
-      <div class="project">
-        <div class="projecttext">
-          <h2>Soda Zone</h2>
-          <p>Adorable platformer featuring a pink frog adventuring through soda themed worlds.</p>
-        </div>
-        <div class="projectimage">
-          <img src="sodazone.png">
-        </div>
-      </div>
-      <div class="project">
-        <div class="projecttext">
-          <h2>This could be your project!</h2>
-          <p>I'm always down to try new things for money. Shoot me an email if you have an idea that you need brought to life.</p>
-        </div>
-        <div class="projectimage">
-          <img src="face.bmp">
-        </div>
-      </div>
-      <div class="project">
-        <div class="projecttext">
-          <h2>Unusually Gay</h2>
-          <p>A LGBTQIA+ accepting TF2 deathmatch server.</p>
-        </div>
-        <div class="projectimage">
-          <img src="gay.png">
-        </div>
-      </div>
-    </div>
+    <footer>&copy; emilyy.games 2022 <i class="fa-solid fa-heart"></i> You are loved. </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac2604cfe0.js" crossorigin="anonymous"></script>
   </body>
 </html>
