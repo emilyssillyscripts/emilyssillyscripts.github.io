@@ -1,0 +1,111 @@
+@font-face {
+  font-family: Fibberish;
+  src: url(fibberish.ttf);
+}
+
+body {
+  align-content: center;
+  background-color: aquamarine;
+  background-image: url("images/bg.png");
+  background-repeat: repeat;
+  font-family: Fibberish;
+  font-size: 16pt;
+  color: black;
+}
+
+canvas {
+  border: 4px solid black;
+  padding: 0;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 512px;
+  height: 480px;
+}
+
+
+
+.logo {
+  display: block;
+  margin: 20px auto 20px auto;
+  width: 220px;
+  height: 125px;
+}
+
+.content {
+  background-color: white;
+  box-shadow: 8px 8px 16px grey;
+  padding: 20px;
+  margin-top: 32px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 45%;
+}
+
+.gameboy {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 850px;
+  position: absolute;
+  z-index: 1;
+  -webkit-filter: drop-shadow(5px 5px 25px black);
+  filter: drop-shadow(10px 20px 25px black);
+}
+
+.game-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  height: 1400px;
+}
+
+#canvas {
+  background-color: black;
+  position: relative;
+  top: 100px;
+  z-index: 20;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+th {
+  background-color: #3cbcfc;
+  padding: 10px;
+}
+
+td {
+  padding: 4px;
+}
+
+tr:nth-child(odd) {
+  background-color: #a4e4fc;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    max-width: 80%;
+  }
+  .gameboy {
+    width: 425px;
+  }
+
+  .game-container {
+    height: 700px;
+  }
+
+  #canvas {
+    top: 50px;
+    width: 256px;
+    height: 240px;
+  }
+}
