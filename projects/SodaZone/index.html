@@ -2,110 +2,169 @@
 <html>
     <head>
         <title>Soda Zone Demo</title>
-        <link rel="icon" type="image/x-icon" href="frog.png">
+        <link rel="icon" type="image/x-icon" href="images/frog.png">
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
 
-    <style>
-        @font-face {
-            font-family: Fibberish;
-            src: url(fibberish.ttf);
-        }
-
-        body {
-            align-content: center;
-            background-color: aquamarine;
-            background-image: url("bg.png");
-            background-repeat: repeat;
-            font-family: Fibberish;
-            font-size: 16pt;
-            color: black;
-        }
-
-        canvas {
-            border: 4px solid #0f7173;
-            padding: 0;
-            margin: auto;
-            display: block;
-            position: relative;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 512px;
-            height: 480px;
-        }
-
-        .logo {
-            margin: auto;
-            display: block;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            width: 220px;
-            height: 125px;
-        }
-
-        .card {
-            padding-top: 5px;
-            padding-bottom: 20px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-            max-width: 550px;
-            min-height: 100px;
-            border-radius: 3px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            background-color: #fcfcfc;
-        }
-    </style>
-
     <body>
-        <img class="logo" src="sodazonelogo.png" style="margin-left:auto; margin-right:auto;"/>
-        <br/>
-        <canvas id="canvas" width="512px" height="480px"></canvas>
-        <script src="index.js"></script>
-        <script>
-            var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":46454480,"index.wasm":18140456},"gdnativeLibs":[]});
-            engine.startGame();
-        </script>
+      <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #3cbcfc;">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="https://emilyy.games/">emilyy.games</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="https://emilyy.games/"><i class="fa-solid fa-house"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://emilyy.games/about.html"><i class="fa-solid fa-circle-info"></i> About Me</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://emilyy.games/projects.html"><i class="fa-solid fa-computer"></i> Projects</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
 
-        <center>
-            <div class="card">
-                <h1>About</h1>
-                You are froggy! On a quest to defeat the soda lords (or some shit).
-            </div>
-            
-            <div class="card">
-                <h1>Controls</h1>
-                A/D   - Left/Right <br/>
-                Space - Charge Jump <br/>
-                F     - Attack
-            </div>
-            
-            <div class="card">
-                <h1>Credits</h1>
-                <h3>Wonderful asset artists</h3>
-                <br>
-                itch.io
-                <ul>
-                    <li>SciGho</li>
-                    <li>nathan scott</li>
-                    <li>Balloon Cart</li>
-                    <li>LukasLundin</li>
-                    <li>Retrocade Media</li>
-                    <li>untiedgames</li>
-                </ul>
-                <br>
-                opengameart.org
-                <ul>
-                    <li>FoxSynergy</li>
-                    <li>bart</li>
-                    <li>PlayOnLoop</li>
-                    <li>Gumichan01</li>
-                    <li>OwlishMedia</li>
-                </ul>
-            </div>
-        </center>
+      <img class="logo" src="images/sodazonelogo.png"/>
+
+      <div class="game-container">
+        <img class="gameboy" src="images/gameboy.png"/>
+        <canvas id="canvas" width="512px" height="480px"></canvas>
+      </div>
+
+      <script src="index.js"></script>
+      <script>
+          var engine = new Engine({"args":[],"canvasResizePolicy":0,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":50869856,"index.wasm":17503191},"focusCanvas":true,"gdnativeLibs":[]});
+          engine.startGame();
+      </script>
+
+      <center>
+          <div class="container content">
+              <h1>About</h1>
+              You are froggy! On a quest to defeat the soda lords (or some shit).
+          </div>
+
+          <div class="container content">
+              <h1>Controls</h1>
+              A/D   - Left / Right <br/>
+              Space - Charge Jump / Walljump <br/>
+              F     - Attack <br/>
+              E     - Interact <br/>
+          </div>
+
+          <div class="container content">
+              <h1>Credits</h1>
+              <h3>Wonderful asset artists</h3>
+
+              <table>
+                <tr>
+                  <th>Asset</td>
+                  <th>Artist</td>
+                  <th>Source</td>
+                </tr>
+
+                <tr>
+                  <td>Soda Zone</td>
+                  <td>Balloon Cart</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Lunar Joyride</td>
+                  <td>FoxSynergy</td>
+                  <td>opengameart.com</td>
+                </tr>
+
+                <tr>
+                  <td>Fields of Ice</td>
+                  <td>Jonathan So</td>
+                  <td>opengameart.com</td>
+                </tr>
+
+                <tr>
+                  <td>Jump and Run</td>
+                  <td>bart</td>
+                  <td>opengameart.com</td>
+                </tr>
+
+                <tr>
+                  <td>Upbeat Music Loop 05</td>
+                  <td>PlayOnLoop</td>
+                  <td>playonloop.com</td>
+                </tr>
+
+                <tr>
+                  <td>Glitched Nescaline</td>
+                  <td>Gumichan01</td>
+                  <td>opengameart.com</td>
+                </tr>
+
+                <tr>
+                  <td>8-bit Sound Effect Pack</td>
+                  <td>OwlishMedia</td>
+                  <td>opengameart.com</td>
+                </tr>
+
+                <tr>
+                  <td>Fruit+</td>
+                  <td>SciGho</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Froglet</td>
+                  <td>LukasLundin</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Pixel Button Prompts</td>
+                  <td>Retrocade Media</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Fibberish</td>
+                  <td>nathan scott</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Five Free Pixel Explosions</td>
+                  <td>untiedgames</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>CUTE LEGENDS - CAT HEROES</td>
+                  <td>9e0</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Starry Space Parallaxing Background</td>
+                  <td>Enjl</td>
+                  <td>itch.io</td>
+                </tr>
+
+                <tr>
+                  <td>Gameboy Color Image</td>
+                  <td>edmoton</td>
+                  <td>pnghut.com</td>
+                </tr>
+              </table>
+          </div>
+      </center>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/ac2604cfe0.js" crossorigin="anonymous"></script>
     </body>
 </html>
+
