@@ -55,8 +55,8 @@ canvas {
   width: 850px;
   position: absolute;
   z-index: 1;
-  -webkit-filter: drop-shadow(5px 5px 25px black);
-  filter: drop-shadow(10px 20px 25px black);
+  -webkit-filter: drop-shadow(5px 5px 10px black);
+  filter: drop-shadow(10px 20px 10px black);
 }
 
 .game-container {
@@ -66,16 +66,28 @@ canvas {
   height: 1400px;
 }
 
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
 #canvas {
   background-color: black;
   position: relative;
-  top: 100px;
+  top: 120px;
   z-index: 20;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 16px;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
 }
 
 th {
@@ -107,5 +119,25 @@ tr:nth-child(odd) {
     top: 50px;
     width: 256px;
     height: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  table {
+    display: block;
+  }
+
+  .gameboy {
+    width: 212px;
+  }
+
+  .game-container {
+    height: 350px;
+  }
+
+  #canvas {
+    top: 25px;
+    width: 128px;
+    height: 120px;
   }
 }
