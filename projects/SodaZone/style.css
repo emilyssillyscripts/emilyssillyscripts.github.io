@@ -69,13 +69,21 @@ canvas {
 #canvas {
   background-color: black;
   position: relative;
-  top: 100px;
+  top: 120px;
   z-index: 20;
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  margin-top: 16px;
 }
 
 table {
   margin-left: auto;
   margin-right: auto;
+  overflow-x: auto;
+  display: block;
 }
 
 th {
@@ -107,5 +115,21 @@ tr:nth-child(odd) {
     top: 50px;
     width: 256px;
     height: 240px;
+  }
+}
+
+@media (max-width: 400px) {
+  .gameboy {
+    width: 212px;
+  }
+
+  .game-container {
+    height: 350px;
+  }
+
+  #canvas {
+    top: 25px;
+    width: 128px;
+    height: 120px;
   }
 }
