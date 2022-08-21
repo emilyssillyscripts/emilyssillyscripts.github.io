@@ -115,6 +115,10 @@ tr:nth-child(odd) {
     height: 700px;
   }
 
+  .itch {
+    width: 208px;
+  }
+  
   #canvas {
     top: 50px;
     width: 256px;
