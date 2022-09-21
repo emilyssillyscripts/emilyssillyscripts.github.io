@@ -2,9 +2,10 @@ body {
   background-color: #e0c2ff;
 }
 
-nav {
+#navi {
   background-image: url("images/star.png");
   background-size: cover;
+  padding: 0px 0px 0px 0px;
 }
 
 footer {

@@ -27,12 +27,13 @@ canvas {
   height: 480px;
 }
 
-nav {
+#navi {
   background-image: url("images/star.png");
   background-size: cover;
+  padding: 0px 0px 0px 0px;
 }
 
-.logo {
+.game-logo {
   display: block;
   margin: 20px auto 20px auto;
   width: 220px;
