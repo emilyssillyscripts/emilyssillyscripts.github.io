@@ -27,7 +27,10 @@ canvas {
   height: 480px;
 }
 
-
+nav {
+  background-image: url("images/star.png");
+  background-size: cover;
+}
 
 .logo {
   display: block;
@@ -103,6 +106,20 @@ tr:nth-child(odd) {
   background-color: #a4e4fc;
 }
 
+.toggle-img {
+  max-height: 48px;
+  padding: 0px;
+  margin: 0px;
+  -webkit-filter: drop-shadow(2px 2px 4px grey);
+  filter: drop-shadow(2px 2px 4px grey);
+}
+
+.logo {
+  max-height: 48px;
+  padding: 0px;
+  margin: 0px;
+}
+
 @media (max-width: 1000px) {
   .content {
     max-width: 80%;
@@ -118,7 +135,7 @@ tr:nth-child(odd) {
   .itch {
     width: 208px;
   }
-  
+
   #canvas {
     top: 50px;
     width: 256px;
