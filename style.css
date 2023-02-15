@@ -74,3 +74,23 @@ footer {
 .main-link-content:hover {
     background-color: #d8a3fe
 }
+
+@media screen and (min-width: 800px) {
+    .main-sidebar {
+        width: 15%;
+    }
+
+    .main-content {
+        margin-left: 15%;
+    }
+
+    .my-card {
+        margin: 64px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .heart {
+        display: none;
+    }
+}
