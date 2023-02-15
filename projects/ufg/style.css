@@ -1,18 +1,3 @@
-@font-face {
-  font-family: Fibberish;
-  src: url(fibberish.ttf);
-}
-
-body {
-  align-content: center;
-  background-color: aquamarine;
-  background-image: url("images/bg.png");
-  background-repeat: repeat;
-  font-family: Fibberish;
-  font-size: 16pt;
-  color: black;
-}
-
 canvas {
   border: 4px solid black;
   padding: 0;
@@ -27,12 +12,6 @@ canvas {
   height: 480px;
 }
 
-#navi {
-  background-image: url("images/star.png");
-  background-size: cover;
-  padding: 0px 0px 0px 0px;
-}
-
 .game-logo {
   display: block;
   margin: 20px auto 20px auto;
@@ -42,12 +21,11 @@ canvas {
 
 .content {
   background-color: white;
-  box-shadow: 8px 8px 16px grey;
   padding: 20px;
   margin-top: 32px;
-  border-radius: 16px;
+  border-radius: 32px;
   text-align: center;
-  max-width: 45%;
+  width: 90%;
 }
 
 .gameboy {
@@ -59,8 +37,6 @@ canvas {
   width: 850px;
   position: absolute;
   z-index: 1;
-  -webkit-filter: drop-shadow(5px 5px 10px black);
-  filter: drop-shadow(10px 20px 10px black);
 }
 
 .game-container {
@@ -80,12 +56,6 @@ canvas {
   position: relative;
   top: 120px;
   z-index: 20;
-}
-
-footer {
-  padding: 20px;
-  text-align: center;
-  margin-top: 16px;
 }
 
 table {
@@ -121,20 +91,138 @@ tr:nth-child(odd) {
   margin: 0px;
 }
 
+@font-face {
+  font-family: MondayFeelings;
+  src: url(MondayFeelings.ttf);
+}
+
+body {
+  background-color: #d8a3fe;
+}
+
+h2 {
+  margin-top: 16px;
+}
+
+footer {
+  color: white;
+  padding: 32px;
+}
+
+.heart {
+  width: 48px;
+}
+
+.main-image {
+  border-radius: 50%;
+  width: 60%;
+  padding-top: 32px;
+}
+
+.my-card {
+  background-color: white;
+  border-radius: 32px;
+  padding: 32px;
+  margin: 16px;
+}
+
+.main-sidebar {
+  font-family: MondayFeelings;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #b88fe3;
+  text-align: center;
+}
+
+.main-content {
+  margin-left: 20%;
+  text-align: center;
+}
+
+.active {
+  background-color: #d8a3fe;
+}
+
+.social-container {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+
+.social-link {
+  color: white;
+  flex: 30%;
+}
+
+.social-link > i {
+  font-size: 24px;
+}
+
+.social-link:hover {
+  color: #d8a3fe;
+}
+
+.main-link {
+  text-decoration: none;
+  color: white;
+}
+
+.main-link-content {
+  background-color: #b88fe3;
+  height: 64px;
+  line-height: 64px;
+  cursor: default;
+}
+
+.main-link-content:hover {
+  background-color: #d8a3fe
+}
+
+@media screen and (min-width: 800px) {
+  .main-sidebar {
+      width: 15%;
+  }
+
+  .main-content {
+      margin-left: 15%;
+  }
+
+  .my-card {
+      margin: 64px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .heart {
+      display: none;
+  }
+
+  .social-link > i {
+      font-size: 16px;
+  }
+}
+
 @media (max-width: 1000px) {
   .content {
-    max-width: 80%;
+    max-width: 70%;
   }
   .gameboy {
     width: 425px;
   }
 
-  .game-container {
-    height: 700px;
-  }
-
   .itch {
     width: 208px;
+  }
+
+  .game-container {
+    height: 700px;
   }
 
   #canvas {
@@ -144,7 +232,13 @@ tr:nth-child(odd) {
   }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 1200px) {
+  .content {
+    max-width: 40%;
+  }
+}
+
+@media (max-width: 500px) {
   table {
     display: block;
   }
