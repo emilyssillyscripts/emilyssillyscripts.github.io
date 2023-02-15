@@ -1,128 +1,76 @@
+@font-face {
+    font-family: MondayFeelings;
+    src: url(fonts/MondayFeelings.ttf);
+}
+
 body {
-  background-color: #e0c2ff;
-}
-
-#navi {
-  background-image: url("images/star.png");
-  background-size: cover;
-  padding: 0px 0px 0px 0px;
-}
-
-footer {
-  color: #FFFFFF;
-  padding: 20px;
-  text-align: center;
-  margin-top: 16px;
+    background-color: #d8a3fe;
 }
 
 h2 {
-  margin-top: 32px;
+    margin-top: 16px;
 }
 
-small {
-	font-style: italic;
-}
-
-.navbar {
-  box-shadow: 0px 5px 10px grey;
-}
-
-.toggle-img {
-  max-height: 48px;
-  padding: 0px;
-  margin: 0px;
-  -webkit-filter: drop-shadow(2px 2px 4px grey);
-  filter: drop-shadow(2px 2px 4px grey);
-}
-
-.logo {
-  max-height: 48px;
-  padding: 0px;
-  margin: 0px;
-}
-
-.content {
-  background-color: #F4F4F9;
-  box-shadow: 8px 8px 16px grey;
-  padding: 20px;
-  margin-top: 32px;
-  border-radius: 16px;
-  text-align: center;
-  max-width: 90%;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.welcome {
-  max-width: 60%;
-}
-
-.projectimg {
-  max-width: 300px;
-  border-radius: 30px;
-}
-
-
-.headshot {
-  border-radius: 50%;
-  max-height: 200px;
-  padding: 16px;
-}
-
-.donate {
-	padding-top: 8px;
+footer {
+    color: white;
+    padding: 32px;
 }
 
 #carouselControls {
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
-#carouselControls .carousel-item img {
-  object-fit: contain;
-  height: 400px;
-  overflow:hidden;
+.heart {
+    width: 48px;
 }
 
-.carousel-control-next, .carousel-control-prev {
-  filter: invert(100%);
+.main-image {
+    border-radius: 50%;
+    width: 60%;
+    padding-top: 32px;
 }
 
-.carousel-caption {
-  height: 32px;
-  padding: 0;
-  width: 100%;
-  left: 0;
-  bottom: 30px;
-  text-align: center;
-  background-color: rgba(17, 29, 74, 0.5);
+.my-card {
+    background-color: white;
+    border-radius: 32px;
+    padding: 32px;
+    margin: 16px;
 }
 
-#social {
-	margin-top: 32px;
+.main-sidebar {
+    font-family: MondayFeelings;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: #b88fe3;
+    text-align: center;
 }
 
-#support {
-	margin-top: 16px;
+.main-content {
+    margin-left: 20%;
+    text-align: center;
 }
 
-#support h3 {
-	margin-bottom: 0px;
+.active {
+    background-color: #d8a3fe;
 }
 
-#support button {
-	margin-bottom: 4px;
+.main-link {
+    text-decoration: none;
+    color: white;
 }
 
-@media (min-width: 800px) {
-  .content {
-    max-width: 75%;
-  }
+.main-link-content {
+    background-color: #b88fe3;
+    height: 64px;
+    line-height: 64px;
+    cursor: default;
+}
 
-  .welcome {
-    max-width: 40%;
-  }
+.main-link-content:hover {
+    background-color: #d8a3fe
 }
