@@ -21,6 +21,10 @@ footer {
     margin-bottom: 16px;
 }
 
+.gameplay {
+    width: 100%;
+}
+
 .heart {
     width: 48px;
 }
@@ -108,6 +112,10 @@ footer {
 
     .my-card {
         margin: 64px;
+    }
+
+    .gameplay {
+        width: 60%;
     }
 }
 
