@@ -35,6 +35,11 @@ footer {
     width: 60%;
 }
 
+.project-image {
+    width: 60%;
+    margin-top: 32px;
+}
+
 .my-card {
     background-color: white;
     border-radius: 32px;
